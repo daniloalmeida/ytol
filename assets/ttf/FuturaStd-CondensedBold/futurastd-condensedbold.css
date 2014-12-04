@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'FuturaStdBoldCondensed';
+    src: url('futurastd-condensedbold.eot');
+    src: url('futurastd-condensedbold.eot') format('embedded-opentype'),
+         url('futurastd-condensedbold.woff') format('woff'),
+         url('futurastd-condensedbold.ttf') format('truetype'),
+         url('futurastd-condensedbold.svg#FuturaStdBoldCondensed') format('svg');
+}

@@ -1,0 +1,140 @@
+<!--#include file="assets/includes/header.html" -->
+
+<body class="get-involved">
+	
+	<!--#include file="assets/includes/fb-include.html" -->
+	
+	<div id="modal-container">
+		<div id="modal-overlay">&nbsp;</div>
+		<div id="modal-window">
+			<h2>Message Sent Successfully!</h2>
+			<a href="javascript:return void(0);" id="close-modal">close</a>
+			<p>Thank you very much for your message! We will get back to you soon!</p>
+		</div>
+	</div>
+	
+	<div id="container">
+		
+		<!--BEGIN: MAIN CONTENT CONTAINER-->
+		<div id="main-content">
+			
+			<!--#include file="assets/includes/left-col.html" -->
+			
+			<!--BEGIN: CENTER COLUMN-->
+			<div id="center-col-extended">
+				<h2 class="top-title">Get INVOLVED</h2>
+				<h3 class="fullw-title">Please fill in the form below so we can contact you right away!</h3>
+				
+				<div id="get-invovled-form">
+					
+					<!--BEGIN: FORM GET INVOLVED-->
+					<form action="/site/getinvolved-mail.php" method="post" accept-charset="utf-8">
+						
+						<!--BEGIN: PERSONAL INFO-->
+						<fieldset id="personal-info">
+							<legend>Personal Info</legend>
+							
+							<!--BEGIN: NAME-->
+							<div class="field-half">
+								<label for="new-name">Name *</label>
+								<input type="text" name="new-name" value="" id="new-name" class="ytol-txt-input" placeholder="Type your name..." />
+							</div>
+							
+							<!--BEGIN: GENDER-->
+							<div class="field-half radio-block">
+								<label for="new-gender">Gender *</label>
+								<input type="radio" name="new-gender" value="male" id="new-gender-male" />
+								<span>Male</span>
+								<input type="radio" name="new-gender" value="female" id="new-gender-female" />
+								<span>Female</span>
+							</div>
+							
+							<!--BEGIN: EMAIL-->
+							<div class="field-half">
+								<label for="new-mail">E-mail *</label>
+								<input type="text" name="new-mail" value="" id="new-mail" class="ytol-txt-input" placeholder="Type your e-mail..." />
+							</div>
+							
+							<!--BEGIN: DATE OF BIRTH-->
+							<div class="field-half ytol-dob">
+								<label>Date of Birth *</label>
+								<select name="new-dob-day" id="new-dob-day" size="1"></select>
+								<select name="new-dob-month" id="new-dob-month" size="1"></select>
+								<select name="new-dob-year" id="new-dob-year" size="1"></select>
+							</div>
+							
+							<!--BEGIN: MARTIAL STATUS-->
+							<div class="field-half">
+								<label>Martial Status *</label>
+								<select name="new-martial-status" id="new-martial-status" size="1">
+									<option value="Single">Single</option>
+									<option value="Married">Married</option>
+									<option value="Divorced">Divorced</option>
+									<option value="Widower">Widower</option>
+								</select>
+							</div>
+							
+						</fieldset>
+						
+						<!--BEGIN: CONTACT INFO-->
+						<fieldset id="contact-info">
+							<legend>Contact Info</legend>
+							
+							<!--BEGIN: CONTRY-->
+							<div class="field-third has-country">
+								<label>Country *</label>
+								<select name="new-country" id="new-country" size="1"></select>
+							</div>
+							
+							<!--BEGIN: STATE-->
+							<div class="field-third">
+								<label for="new-state">State *</label>
+								<input type="text" name="new-state" value="" id="new-state" class="ytol-txt-input" placeholder="Type the state you live in..." />
+							</div>
+							
+							<!--BEGIN: CITY-->
+							<div class="field-third">
+								<label for="new-city">City *</label>
+								<input type="text" name="new-city" value="" id="new-city" class="ytol-txt-input" placeholder="Type the city you live in..." />
+							</div>
+							
+							<!--BEGIN: ADDRESS-->
+							<div class="field-full">
+								<label for="new-city">Address *</label>
+								<input type="text" name="new-address" value="" id="new-address" class="ytol-txt-input" placeholder="Your current address..." />
+							</div>
+							
+							<!--BEGIN: PHONE-->
+							<div class="field-third">
+								<label for="new-phone">Phone *</label>
+								<input type="text" name="new-phone" value="" id="new-phone" class="ytol-txt-input" placeholder="+Country Code (City Code) Phone Number" />
+							</div>
+							
+							<!--BEGIN: CELLPHONE-->
+							<div class="field-third">
+								<label for="new-cel">Cellphone *</label>
+								<input type="text" name="new-cel" value="" id="new-cel" class="ytol-txt-input" placeholder="+Country Code (City Code) Phone Number" />
+							</div>
+							
+							<!--BEGIN: SKYPE-->
+							<div class="field-third">
+								<label for="new-skype">Skype</label>
+								<input type="text" name="new-skype" value="" id="new-skype" class="ytol-txt-input" placeholder="@skype user name" />
+							</div>
+							
+						</fieldset>
+						
+						<div class="clearfix"></div>
+						
+						<div id="form-action-bar">
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+					
+				</div>
+			</div>
+
+		</div>
+		<!--END: MAIN CONTENT CONTAINER-->
+
+		<!--#include file="assets/includes/footer.html" -->

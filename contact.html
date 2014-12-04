@@ -1,0 +1,77 @@
+<!--#include file="assets/includes/header.html" -->
+
+<body class="contact">
+	
+	<!--#include file="assets/includes/fb-include.html" -->
+	
+	<div id="modal-container">
+		<div id="modal-overlay">&nbsp;</div>
+		<div id="modal-window">
+			<h2>Message Sent Successfully!</h2>
+			<a href="javascript:return void(0);" id="close-modal">close</a>
+			<p>Thank you very much for your message! We will get back to you soon!</p>
+		</div>
+	</div>
+	
+	<div id="container">
+		
+		<!--BEGIN: MAIN CONTENT CONTAINER-->
+		<div id="main-content">
+			
+			<!--#include file="assets/includes/left-col.html" -->
+			
+			<!--BEGIN: CENTER COLUMN-->
+			<div id="center-col-extended">
+				<h2 class="top-title">Contact US</h2>
+				<h3 class="sub-title">We look forward to hearing from you!</h3>
+				
+				<div id="contact-form">
+					
+					<!--BEGIN: FORM GET INVOLVED-->
+					<!--<form action="/ytol/new-release/contact-mail-send.php" method="post" accept-charset="utf-8">-->
+					<form action="/site/contact-mail-send.php" method="post" accept-charset="utf-8">
+						
+						<!--BEGIN: PERSONAL INFO-->
+						<fieldset id="contact">
+							
+							<!--BEGIN: NAME-->
+							<div class="field-half">
+								<label for="contact-name">Name *</label>
+								<input type="text" name="new-name" value="Type your name..." id="new-name" class="ytol-txt-input" />
+							</div>
+							
+							<!--BEGIN: EMAIL-->
+							<div class="field-half">
+								<label for="contact-mail">E-mail *</label>
+								<input type="text" name="new-mail" value="Type your e-mail..." id="new-mail" class="ytol-txt-input" />
+							</div>
+							
+							<!--BEGIN: SUBJECT-->
+							<div class="field-full">
+								<label for="contact-subject">Subject *</label>
+								<input type="text" name="contact-subject" value="Type your subject..." id="contact-subject" class="ytol-txt-input" />
+							</div>
+							
+							<!--BEGIN: ADDRESS-->
+							<div class="field-full text-area">
+								<label for="contact-msg">Message *</label>
+								<textarea name="contact-msg" rows="8" cols="40" id="contact-msg">Type your message...</textarea>
+							</div>
+							
+						</fieldset>
+						
+						<div class="clearfix"></div>
+						
+						<div id="form-action-bar">
+							<a href="get-involved.html" class="home-btn home-btn-5 home-btn-caps" title="Get Involved »" style="float:left">Get Involved »</a>
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+					
+				</div>
+			</div>
+
+		</div>
+		<!--END: MAIN CONTENT CONTAINER-->
+
+		<!--#include file="assets/includes/footer.html" -->
