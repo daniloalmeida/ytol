@@ -159,21 +159,22 @@ $(document).ready(function() {
 		
 		if ( isMap > 0 ){
 			var imgArray = new Array("assets/images/where-we-are/responsibles/ytol-resp-brean.jpg",			// INTERNATIONAL
-									"assets/images/where-we-are/responsibles/ytol-resp-melca.jpg",             // BRAZIL
+									"assets/images/where-we-are/responsibles/ytol-resp-melca.jpg",          // BRAZIL
 									"assets/images/where-we-are/responsibles/ytol-resp-allan.jpg",          // COSTA RICA
-									"assets/images/where-we-are/responsibles/ytol-resp-malanie.jpg",          // USA
-									"assets/images/where-we-are/responsibles/ytol-resp-michael.jpg",          // CANADA
+									"assets/images/where-we-are/responsibles/ytol-resp-malanie.jpg",        // USA
+									"assets/images/where-we-are/responsibles/ytol-resp-michael.jpg",        // CANADA
 									"assets/images/where-we-are/responsibles/ytol-resp-rodolfo.jpg",        // PORTUGAL
 									"assets/images/where-we-are/responsibles/ytol-resp-no-prof.jpg",        // ANGOLA
 									"assets/images/where-we-are/responsibles/ytol-resp-juan.jpg",           // SPAIN
 									"assets/images/where-we-are/responsibles/ytol-resp-no-prof.jpg",        // FRANCE
 									"assets/images/where-we-are/responsibles/ytol-resp-no-prof.jpg",        // HAITI
 									"assets/images/where-we-are/responsibles/ytol-resp-no-prof.jpg",        // ITALY
-									"assets/images/where-we-are/responsibles/ytol-resp-joelle.jpg",        // LEBANON
+									"assets/images/where-we-are/responsibles/ytol-resp-joelle.jpg",         // LEBANON
 									"assets/images/where-we-are/responsibles/ytol-resp-no-prof.jpg",        // MOZAMBIQUE
-									"assets/images/where-we-are/responsibles/ytol-resp-george.jpg",        // SYRIA
+									"assets/images/where-we-are/responsibles/ytol-resp-george.jpg",         // SYRIA
 									"assets/images/where-we-are/responsibles/ytol-resp-no-prof.jpg",        // PANAMA
-									"assets/images/where-we-are/responsibles/ytol-resp-joelle.jpg");       // LEBANON
+									"assets/images/where-we-are/responsibles/ytol-resp-joelle.jpg",         // LEBANON
+									"assets/images/where-we-are/responsibles/ytol-resp-no-prof.jpg");       // EXAMPLE
 			
 			var nameArray = new Array("Brean Bettencourt",							// INTERNATIONAL
 									"Melca Pontes",                              	// BRAZIL
@@ -190,7 +191,8 @@ $(document).ready(function() {
 									"Coming Soon...",                               // MOZAMBIQUE
 									"George Koko",                                  // SYRIA
 									"Coming Soon...",                               // PANAMA
-									"Joelle Azar");                                 // LEBANON
+									"Joelle Azar",                                  // LEBANON
+									"EXAMPLE.......");                              // EXAMPLE
 			
 			var funArray = new Array("International Responsible",					// INTERNATIONAL
 									"National Responsible - Brazil",                // BRAZIL
@@ -207,7 +209,8 @@ $(document).ready(function() {
 									"National Responsible - Mozambique",            // MOZAMBIQUE
 									"National Responsible - Syria",                 // SYRIA
 									"National Responsible - Panama",                // PANAMA
-									"National Responsible - Lebanon");              // LEBANON
+									"National Responsible - Lebanon",               // LEBANON
+									"National Responsible - EXAMPLE");              // EXAMPLE
 									
 			var mailArray = new Array("responsible@ytolinternational.com",			// INTERNATIONAL
 									"responsavel.nacional@ejnsbrasil.com.br",		// BRAZIL
@@ -224,7 +227,8 @@ $(document).ready(function() {
 									"ccmassona@yahoo.com.br",						// MOZAMBIQUE
 									"basselelias@hotmail.com",						// SYRIA
 									"responsible@ytolinternational.com",			// PANAMA
-									"endj.liban@gmail.com");						// LEBANON
+									"endj.liban@gmail.com", 						// LEBANON
+									"example@example.com");   						// EXAMPLE
 			
 			var siteArray = new Array("http://www.ytolinternational.com",				// INTERNATIONAL
 									"http://www.ejnsbrasil.com.br",						// BRAZIL
@@ -241,9 +245,10 @@ $(document).ready(function() {
 									"http://www.ytolinternational.com",					// MOZAMBIQUE
 									"http://www.ytolinternational.com",					// SYRIA
 									"http://www.ytolinternational.com",					// PANAMA
-									"http://www.ytolinternational.com");				// LEBANON
+									"http://www.ytolinternational.com", 				// LEBANON
+									"http://www.example.com");							// EXAMPLE
 															
-			var descArray = new Array("","","",	"",	"",	"",	"",	"",	"",	"",	"",	"",	"",	"",	"",	"");
+			var descArray = new Array("","","",	"",	"",	"",	"",	"",	"",	"",	"",	"",	"",	"",	"",	"", ""); //Same # of elements as above
 			
 			var currentIndex = 0;
 			
@@ -322,8 +327,8 @@ $(document).ready(function() {
 					$('div#modal-container div.country-info:eq(1) ul li:eq(3) a').text(siteArray[15]);
 					$('div#modal-container div.country-info:eq(1) ul li:eq(3) a').attr('href', siteArray[15]);
 					$('div#modal-container div.country-info:eq(1) ul li:eq(4)').text(descArray[15]);
-				}else{
-					$('div#modal-container div.country-info:eq(1)').css('display', 'none');
+				//}else{
+				//	$('div#modal-container div.country-info:eq(1)').css('display', 'none');
 				};
 				
 				$('div#modal-container div.country-info:eq(0) img').attr('src', imgArray[currentIndex]);
