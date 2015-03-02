@@ -1,0 +1,138 @@
+﻿@charset "UTF-8";
+.person-container {
+  margin: 0 auto 2em auto;
+  width: 80%; }
+  .person-container .person-info {
+    padding: 1em 0.75em;
+    min-height: 6.5em; }
+  .person-container .person-bio {
+    display: none; }
+  @media (min-width: 600px) {
+    .person-container {
+      float: left;
+      width: 48%;
+      margin-right: 4%; }
+      .person-container:nth-of-type(2n) {
+        margin-right: 0;
+        float: none;
+        overflow: hidden;
+        width: auto; } }
+  @media (min-width: 767px) {
+    .person-container {
+      float: left;
+      width: 30%;
+      margin-right: 5%; }
+      .person-container:nth-of-type(2n) {
+        float: left;
+        width: 30%;
+        margin-right: 5%; }
+      .person-container:nth-of-type(3n) {
+        margin-right: 0;
+        float: none;
+        overflow: hidden;
+        width: auto; } }
+  @media (min-width: 1120px) {
+    .person-container {
+      float: left;
+      width: 22%;
+      margin-right: 4%; }
+      .person-container:nth-of-type(2n) {
+        float: left;
+        width: 22%;
+        margin-right: 4%; }
+      .person-container:nth-of-type(3n) {
+        float: left;
+        width: 22%;
+        margin-right: 4%; }
+      .person-container:nth-of-type(4n) {
+        margin-right: 0;
+        float: none;
+        overflow: hidden;
+        width: auto; } }
+
+
+.people {
+  max-width: 1120px;
+  margin: auto; }
+  .people::before, .people::after {
+    content: " ";
+    display: table; }
+  .people::after {
+    clear: both; }
+  .people h2 {
+    text-align: center; }
+
+.person-container {
+  margin: 0 auto 2em auto;
+  width: 80%; }
+  .person-container .person-info {
+    padding: 1em 0.75em;
+    min-height: 6.5em; }
+  .person-container .person-bio {
+    display: none; }
+  @media (min-width: 600px) {
+    .person-container {
+      float: left;
+      width: 48%;
+      margin-right: 4%; }
+      .person-container:nth-of-type(2n) {
+        margin-right: 0;
+        float: none;
+        overflow: hidden;
+        width: auto; } }
+  @media (min-width: 767px) {
+    .person-container {
+      float: left;
+      width: 30%;
+      margin-right: 5%; }
+      .person-container:nth-of-type(2n) {
+        float: left;
+        width: 30%;
+        margin-right: 5%; }
+      .person-container:nth-of-type(3n) {
+        margin-right: 0;
+        float: none;
+        overflow: hidden;
+        width: auto; } }
+  @media (min-width: 1120px) {
+    .person-container {
+      float: left;
+      width: 22%;
+      margin-right: 4%; }
+      .person-container:nth-of-type(2n) {
+        float: left;
+        width: 22%;
+        margin-right: 4%; }
+      .person-container:nth-of-type(3n) {
+        float: left;
+        width: 22%;
+        margin-right: 4%; }
+      .person-container:nth-of-type(4n) {
+        margin-right: 0;
+        float: none;
+        overflow: hidden;
+        width: auto; } }
+.person, .personattribute {
+  background-color: #transparent;
+  text-align: center; }
+  .person img, .personattribute img {
+    cursor: pointer;
+    width: 100%; }
+  .person h3, .personattribute h3 {
+    font-size: 1.11111em;
+    margin-bottom: 0.25em; }
+  .person h4, .personattribute h4 {
+    font-size: 0.88889em;
+    font-weight: 400; }
+  .person a, .personattribute a {
+    background-color: #transparent;
+    color: #fafafa;
+    display: block;
+    font-size: 1.16667rem;
+    padding: 0.35em 0 0.3em 0; }
+    .person a:hover, .personattribute a:hover {
+      background-color: #27aaa4; }
+
+.personattribute .header a {
+  padding: 0;
+  background-color: transparent; }
